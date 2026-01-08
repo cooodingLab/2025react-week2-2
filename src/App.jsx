@@ -162,7 +162,10 @@ function App() {
                     alt="產品主圖"
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{tempProduct.title}</h5>
+                    <h5 className="card-title">
+                      {tempProduct.title}
+                      <span className="badge bg-primary ms-2">{tempProduct.category}</span>
+                    </h5>
                     <p className="card-text">商品描述：{tempProduct.description}</p>
                     <p className="card-text">商品內容：{tempProduct.content}</p>
                     <div className="d-flex mb-3">
